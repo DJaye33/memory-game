@@ -26,4 +26,9 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: var(--color-stone); }
+
 /*# sourceMappingURL=app.css.map */
