@@ -31,4 +31,23 @@ h2 {
   line-height: 1.9rem;
   color: var(--color-stone); }
 
+.container .logo {
+  display: block;
+  margin: 8rem auto 0; }
+
+.start__selections {
+  padding: 2.4rem;
+  background-color: var(--color-near-white);
+  width: 87%;
+  margin: 4.5rem auto 0; }
+  .start__selections::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-prussian-blue);
+    z-index: -1; }
+
 /*# sourceMappingURL=app.css.map */

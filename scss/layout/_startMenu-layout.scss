@@ -1,0 +1,17 @@
+.start__selections {
+  padding: 2.4rem;
+  background-color: var(--color-near-white);
+  width: 87%;
+  margin: 4.5rem auto 0;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-prussian-blue);
+    z-index: -1;
+  }
+}
