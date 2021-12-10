@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Colors */
+  --color-gold: #fda214;
+  --color-beau-blue: #bcced9;
+  --color-prussian-blue: #304859;
+  --color-denim: #152938;
+  --color-light-gray: #f2f2f2;
+  --color-stone: #7191a5;
+  --color-near-white: #fcfcfc;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
