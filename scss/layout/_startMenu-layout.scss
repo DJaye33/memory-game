@@ -28,7 +28,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--color-prussian-blue);
+    background-color: var(--color-denim);
     z-index: -1;
   }
 
@@ -54,6 +54,10 @@
       transition: background-color 0.2s ease-in-out;
 
       &:hover {
+        background-color: var(--color-air-force-blue);
+      }
+
+      &.active {
         background-color: var(--color-prussian-blue);
       }
     }

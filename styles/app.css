@@ -19,7 +19,8 @@ button {
   --color-denim: #152938;
   --color-light-gray: #f2f2f2;
   --color-stone: #7191a5;
-  --color-near-white: #fcfcfc; }
+  --color-near-white: #fcfcfc;
+  --color-air-force-blue: #6395bb; }
 
 html {
   box-sizing: border-box;
@@ -59,7 +60,7 @@ h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--color-prussian-blue);
+  background-color: var(--color-denim);
   z-index: -1; }
 .start__selections-menuBtns {
   display: flex;
@@ -81,6 +82,8 @@ h2 {
     flex-basis: 50%;
     transition: background-color 0.2s ease-in-out; }
     .start__selections-menuBtnsBtn:hover {
+      background-color: var(--color-air-force-blue); }
+    .start__selections-menuBtnsBtn.active {
       background-color: var(--color-prussian-blue); }
 .start__selections-menuStart {
   font-family: inherit;
