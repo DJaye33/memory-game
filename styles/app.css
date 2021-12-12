@@ -1,3 +1,6 @@
+button {
+  cursor: pointer; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -10,6 +13,7 @@
 :root {
   /* Colors */
   --color-gold: #fda214;
+  --color-gold-light: #ffb84a;
   --color-beau-blue: #bcced9;
   --color-prussian-blue: #304859;
   --color-denim: #152938;
@@ -31,23 +35,60 @@ h2 {
   line-height: 1.9rem;
   color: var(--color-stone); }
 
-.container .logo {
+.start__selections-logo {
   display: block;
   margin: 8rem auto 0; }
-
-.start__selections {
+.start__selections-menu {
   padding: 2.4rem;
   background-color: var(--color-near-white);
   width: 87%;
-  margin: 4.5rem auto 0; }
-  .start__selections::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--color-prussian-blue);
-    z-index: -1; }
+  margin: 4.5rem auto 0;
+  border-radius: 1rem; }
+.start__selections::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-prussian-blue);
+  z-index: -1; }
+.start__selections-menuBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 4%;
+  margin-top: 1.1rem;
+  margin-bottom: 2.4rem; }
+  .start__selections-menuBtnsBtn {
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-near-white);
+    padding: 1rem 0;
+    border-radius: 2.6rem;
+    border: none;
+    background-color: var(--color-beau-blue);
+    flex-basis: 50%;
+    transition: background-color 0.2s ease-in-out; }
+    .start__selections-menuBtnsBtn:hover {
+      background-color: var(--color-prussian-blue); }
+.start__selections-menuStart {
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: var(--color-near-white);
+  padding: 1.2rem 0;
+  width: 100%;
+  margin-top: 0.8rem;
+  border: none;
+  border-radius: 2.6rem;
+  background-color: var(--color-gold);
+  transition: all 0.2s ease-in-out; }
+  .start__selections-menuStart:hover {
+    transform: translateY(-0.25rem);
+    background-color: var(--color-gold-light); }
 
 /*# sourceMappingURL=app.css.map */

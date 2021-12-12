@@ -12,6 +12,7 @@
 :root {
   /* Colors */
   --color-gold: #fda214;
+  --color-gold-light: #ffb84a;
   --color-beau-blue: #bcced9;
   --color-prussian-blue: #304859;
   --color-denim: #152938;
@@ -32,7 +33,7 @@ body {
 }
 
 h2 {
-    font-size: 1.5rem;
-    line-height: 1.9rem;
-    color: var(--color-stone)
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: var(--color-stone);
 }
