@@ -1,6 +1,14 @@
 const selectThemes = document.querySelectorAll(".theme");
 const selectPlayers = document.querySelectorAll(".players");
 const selectGrid = document.querySelectorAll(".grid");
+const MenuBtn = document.querySelector(".menu");
+const gameMenu = document.querySelector(".game-menu");
+const menuOverlay = document.querySelector(".overlay");
+
+menuOverlay.addEventListener("click", (evt) => {
+  evt.target.classList.toggle("active");
+  gameMenu.classList.toggle("active");
+});
 
 const startMenuSelectionActive = (selectionArr, selectionType) => {
   selectionArr.forEach((btn) => {
@@ -12,6 +20,11 @@ const startMenuSelectionActive = (selectionArr, selectionType) => {
     });
   });
 };
+
+MenuBtn.addEventListener("click", (evt) => {
+  menuOverlay.classList.add("active");
+  gameMenu.classList.toggle("active");
+});
 
 startMenuSelectionActive(selectThemes, "theme");
 startMenuSelectionActive(selectPlayers, "players");

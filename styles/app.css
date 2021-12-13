@@ -19,6 +19,8 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
   cursor: pointer; }
+  .overlay.active {
+    display: block; }
 
 * {
   margin: 0;
@@ -130,6 +132,8 @@ h2 {
       transform: translate(-50%, -50%);
       background-color: var(--color-near-white);
       border-radius: 1rem; }
+      .game__header-menu.active {
+        display: flex; }
       .game__header-menu button {
         font-size: 1.8rem;
         line-height: 2.2rem;

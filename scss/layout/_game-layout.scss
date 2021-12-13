@@ -18,6 +18,10 @@
       background-color: var(--color-near-white);
       border-radius: 1rem;
 
+      &.active {
+        display: flex;
+      }
+
       & button {
         font-size: 1.8rem;
         line-height: 2.2rem;
