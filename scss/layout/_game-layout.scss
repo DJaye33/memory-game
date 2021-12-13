@@ -1,0 +1,57 @@
+.game {
+  padding: 2.4rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-menu {
+      display: none; // flex
+      flex-direction: column;
+      padding: 2.4rem;
+      width: 87%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-near-white);
+      border-radius: 1rem;
+
+      & button {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: var(--color-prussian-blue);
+        padding: 1.25rem 0;
+        margin-top: 1.6rem;
+        background-color: var(--color-light-grayish-blue);
+
+        &:hover {
+          background-color: var(--color-beau-blue);
+        }
+
+        &:first-child {
+          background-color: var(--color-gold);
+          color: var(--color-near-white);
+          margin-top: 0;
+
+          &:hover {
+            background-color: var(--color-gold-light);
+          }
+        }
+      }
+
+      &Btn {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 1rem 0;
+        width: 7.8rem;
+        background-color: var(--color-gold);
+
+        &:hover {
+          background-color: var(--color-gold-light);
+        }
+      }
+    }
+  }
+}
